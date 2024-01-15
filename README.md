@@ -1,2 +1,2 @@
 # happy
-streamlit application will ne stored here
+streamlit application will be stored here
