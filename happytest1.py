@@ -151,7 +151,7 @@ if page == pages[2] :
          "5. Gradient boosting regressor\n")
     st.write("Die Models were evaluated observing the following results:")
 
-    df_fin= pd.read_csv(r"C:\Users\diego\Downloads\df_Fin.csv",index_col=False,header=0,usecols=['Country', 'Region', 'Year', 'Ladder', 'Log GDP', 'Social Supp',
+    df_fin= pd.read_csv("df_Fin.csv",index_col=False,header=0,usecols=['Country', 'Region', 'Year', 'Ladder', 'Log GDP', 'Social Supp',
        'Life expectancy', 'Freedom', 'generosity', 'Corruption', 'Violence',
        'Rate Beds', 'Rate Medical', 'Rate Nursing', 'Rate Dentists',
        'poverty_gap', 'poverty_severity', 'gini'])
