@@ -544,7 +544,7 @@ if page == pages[2] :
 
     st.write("In this section, we calculate SHAP values and visualize feature importance, feature dependence, force, and decision plot. SHAP values show how each feature affects each final prediction, the importance of each feature compared to others, and the model's dependence on the interaction between features.")
     
-    df_shap= pd.read_csv(r"C:\Users\diego\Downloads\df_Fin.csv",index_col=False,header=0,usecols=['Country', 'Region', 'Year', 'Ladder', 'Log GDP', 'Social Supp',
+    df_shap= pd.read_csv("df_Fin.csv",index_col=False,header=0,usecols=['Country', 'Region', 'Year', 'Ladder', 'Log GDP', 'Social Supp',
        'Life expectancy', 'Freedom', 'generosity', 'Corruption', 'Violence','Rate Beds', 'Rate Medical', 'Rate Nursing', 'Rate Dentists','poverty_gap', 'poverty_severity', 'gini'])
     
     X = df_shap.drop(['Country', 'Region', 'Year', 'Ladder'],axis=1) # explanatory variables
